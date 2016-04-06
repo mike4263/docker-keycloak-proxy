@@ -11,4 +11,6 @@ RUN cd /opt/jboss/ && wget https://downloads.jboss.org/keycloak/$KEYCLOAK_VERSIO
 
 EXPOSE 8080 8443 
 
-CMD ["java", "-jar", "bin/launcher.jar", "/opt/jboss/keycloak-proxy/config.json"]
+WORKDIR /opt/jboss/keycloak-proxy
+
+CMD ["java", "-jar", "bin/launcher.jar", "config.json"]
