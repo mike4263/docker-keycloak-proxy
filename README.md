@@ -13,6 +13,5 @@ KeyCloak Proxy is configured via a json file. In this version of the image you m
 Running
 -------
 
-```
-docker run -p 8080:8080 -v /etc/keycloak-config.json:/opt/jboss/keycloak-proxy/config.json cpitman/keycloak-proxy 
-```
+    docker run -p 8080:8080 -v /etc/keycloak-config.json:/opt/jboss/keycloak-proxy/config.json cpitman/keycloak-proxy 
+
